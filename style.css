@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: -150px -250px, right -2.75em bottom -30.75em;
+    background-color: hsl(185, 75%, 39%);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img-bg {
+    background-image: url("./images/bg-pattern-card.svg");
+    height: 400px;
+    width: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+img {
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.profile-picture {
+    margin-top: -40px;
+    border: 5px solid #fff;
+    height: 50%;
+    width: auto;
+}
+
+.card {
+    background-color: #fff;
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.stats {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+.item h2 {
+    margin: 2px;
+    padding-top: 15px;
+}
+
+.item p {
+    margin: 9px;
+}
+
+.grey {
+    color: grey;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    height: 0.2px;
+    background-color: grey; 
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+h2 span {
+    color: grey;
+}
+
+p {
+    color: grey;
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        max-width: 450px;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .img-bg {
+        height: 300px;
+        width: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card {
+        background-color: #fff; 
+        width: 300px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+}
